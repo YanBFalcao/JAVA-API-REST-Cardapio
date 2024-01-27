@@ -16,6 +16,7 @@ import java.util.List;
 // MÉTODO PARA CONSULTAR ITEM DO BANCO DE DADOS
     @Autowired
     private FoodRepository repository;
+    @CrossOrigin(origins = "http://localhost:5173")
     @GetMapping  // CRIANDO ENDPOINT GET
     public List<FoodResponseDTO> getAll(){
 
@@ -24,7 +25,7 @@ import java.util.List;
     }
 
 // MÉTODO PARA SALVAR ITEM DO BANCO DE DADOS
-    @CrossOrigin(origins = "*", allowedHeaders = "8")
+    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "8")
     @PostMapping   // CRIANDO ENDPOINT POST
     public void saveFood(@RequestBody FoodRequestDTO data){
         Food foodData = new Food(data);
@@ -33,6 +34,7 @@ import java.util.List;
     }
 
 // MÉTODO PARA ATUALIZAR ITEM DO BANCO DE DADOS
+    @CrossOrigin(origins = "http://localhost:5173")
     @PutMapping(value = "/{id}") // CRIANDO ENDPOINT PUT
     public String updateFood(@PathVariable long id, @RequestBody Food food){
 
@@ -48,6 +50,7 @@ import java.util.List;
     }
 
 // MÉTODO PARA DELETAR ITEM DO BANCO DE DADOS
+    @CrossOrigin(origins = "http://localhost:5173")
     @DeleteMapping("/{id}") // CRIANDO ENDPOINT DELETE
     public String deleteFood (@PathVariable ("id") Long id) {
         if (repository.existsById(id)) {
