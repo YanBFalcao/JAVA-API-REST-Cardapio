@@ -23,6 +23,9 @@ Ajustado em 27/01/2024
 Ajustado em 31/01/2024
  - Foi necessário criar a classe "CorsConfig.java" para aceitar todos os tipos de requisição requisitadas por meio do Front End. Não foi o suficiente, ter realizado o processo de notação @CrossOrigin de forma individual. Com isso, foi dado permissão para todas as requisições HTTP que poderá ser realizado por meio do Front End desenvolvido por outro exercício em meu perfil, "REACT-Cardapio".
 
+Ajustado em 04/02/2024
+ - A configuração dos CORS para métodos DELETE e PUT foram atualizados conforme necessidade. Sem os ajustes, em que são encontrados no Controller, não é possível realizar a operação de requisição dos métodos.
+
 Atenciosamente,
 
 Yan B. Falcão
