@@ -18,9 +18,9 @@ public class Food {
     private Integer price;
 
     public Food(FoodRequestDTO data){
+        this.id= data.id();
         this.image= data.image();
         this.price= data.price();
         this.title= data.title();
     }
-
 }
