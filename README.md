@@ -2,6 +2,10 @@
 
 Este exercício criado com orientação de vídeos do YouTube. Se diz respeito a uma criação de API na linguagem JAVA. O mesmo possui métodos/endpoints criados para os métodos de GET, POST, PUT e DELETE.
 
+Vídeos (Canal YouTube): @kipperdev
+- Vídeo 1: https://www.youtube.com/watch?v=lUVureR5GqI
+- Vídeo 2: https://www.youtube.com/watch?v=WHruc3_2z68
+
 O exercício está relacionado as linguagens:
 - JAVA;
 - MySQL.
@@ -26,6 +30,10 @@ Ajustado em 31/01/2024
 
 Ajustado em 04/02/2024
  - A configuração dos CORS para métodos DELETE e PUT foram atualizados conforme necessidade. Sem os ajustes, em que são encontrados no Controller, não é possível realizar a operação de requisição dos métodos.
+
+Finalizado em 10/02/2024
+ - Código organizado para melhor leitura e orientação para outros estudantes, caso queiram realizar downlaod para estudos.
+ - Projeto finalizado em 10/02/2024 para inicio de outros projetos.
 
 Atenciosamente,
 
